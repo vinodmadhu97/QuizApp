@@ -22,11 +22,11 @@ class _QuizAppState extends State<QuizApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade500,
+      //backgroundColor: Colors.grey.shade500,
       appBar: AppBar(
         title: Text("Quiz App"),
         centerTitle: true,
-        backgroundColor: Colors.grey.shade700,
+        //backgroundColor: Colors.grey.shade700,
       ),
 
       //we use [Builder] here to use a context that is a descendant of scaffold.of() in snackbar
@@ -48,11 +48,14 @@ class _QuizAppState extends State<QuizApp> {
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Center(child: Text(question[_correntQuestionIndex].questionText,
-                    style: TextStyle(
-                      color: Colors.grey.shade700,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500
-                    ) ,)),
+                    //this properties added from theme data object in main class
+                    // style: TextStyle(
+                    //   color: Colors.grey.shade700,
+                    //   fontSize: 16.0,
+                    //   fontWeight: FontWeight.w500
+                    //   ),
+                    ),
+                  ),
                 ),
               ),
 
